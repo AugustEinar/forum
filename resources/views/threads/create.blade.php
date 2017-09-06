@@ -8,28 +8,30 @@
                 <div class="panel-heading">Create a New Thread</div>
 
                 <div class="panel-body">
-                <form class="form-horizontal" method="POST" action="{{ route('register') }}">
-                    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                <div>
+                            <label for="email">Title:</label>
+                            <div class="form-group">
+                              <input type="text" class="form-control">
                             </div>
                         </div>
-
                 </div>
-                <div class="panel panel-default">
+                <div>
                 </div>
                     <div class="panel-body">
                
                       
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                        <div>
+                            <label for="email">Body:</label>
+                            <div class="form-group">
+                              <textarea rows="10" class="form-control">
+                                  
+                              </textarea>
                             </div>
+                        </div>
+                        <br>
+                        <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default">Publish</button>
                         </div>
                     </div>
                 </div>
